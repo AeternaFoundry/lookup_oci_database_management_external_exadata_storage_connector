@@ -1,0 +1,6 @@
+data "oci_database_management_external_exadata_storage_connector" "database_management_external_exadata_storage_connector_lookup" {
+  for_each = var.database_management_external_exadata_storage_connector_lookup
+
+  external_exadata_storage_connector_id = each.value.external_exadata_storage_connector_id
+}
+
